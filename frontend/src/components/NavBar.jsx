@@ -5,7 +5,7 @@ const Navbar = ({ token, logout }) => {
   const navigate = useNavigate();
 
   return (
-    <nav className="bg-blue-500 text-white px-4 py-3 shadow-md rounded-lg fixed w-full z-10">
+    <nav className="bg-indigo-700 text-white px-4 py-3 shadow-md rounded-lg fixed w-full z-10 border-black border-2">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-xl font-bold">
           <Link to="/">MERN To-Do</Link>
@@ -13,6 +13,9 @@ const Navbar = ({ token, logout }) => {
         <div className="flex items-center space-x-4">
           {token ? (
             <>
+              <Link to="/tasks" className="hover:underline">
+                Tasks
+              </Link>
               <Link to="/profile" className="hover:underline">
                 Profile
               </Link>
