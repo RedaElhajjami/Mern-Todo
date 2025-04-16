@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import api from "../axiosConfig";
 
 const AuthForm = ({ setToken }) => {
@@ -7,7 +7,7 @@ const AuthForm = ({ setToken }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLogin, setIsLogin] = useState(true);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const AuthForm = ({ setToken }) => {
       if (isLogin) {
         setToken(res.data.token);
         localStorage.setItem("token", res.data.token);
-        navigate("/tasks"); // Redirect to tasks page after login
+        navigate("/tasks");
       } else {
         alert("Inscription réussie, connectez-vous");
         setIsLogin(true);

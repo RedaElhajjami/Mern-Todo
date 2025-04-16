@@ -46,7 +46,6 @@ const App = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar token={token} logout={logout} />
       <div className="flex-grow bg-gray-50 flex justify-center items-center">
-        {/* Wrapper for consistent styling */}
         <div className="w-full max-w-4xl p-4">
           <Routes>
             <Route path="/" element={<Home />} />

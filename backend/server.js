@@ -18,11 +18,12 @@ mongoose
   .then(() => console.log("MongoDB connecté"))
   .catch((err) => console.log(err));
 
-// Ajouter les routes
 const taskRoutes = require("./routes/tasks");
 const authRoutes = require('./routes/auth');
+const profileRoutes = require('./routes/profile');
 app.use("/api/tasks", taskRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api', profileRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
