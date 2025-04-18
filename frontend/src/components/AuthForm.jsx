@@ -28,18 +28,18 @@ const AuthForm = ({ setToken }) => {
   };
 
   return (
-    <div className="flex h-screen bg-indigo-700 rounded-md hover:shadow-black hover:shadow-2xl">
-      <div className="w-full max-w-sm m-auto bg-indigo-100 rounded p-5">
-        <p className="text-indigo-400 text-2xl font-bold flex justify-center">
+    <div className="flex h-screen bg-emerald-700 rounded-md hover:shadow-black hover:shadow-2xl">
+      <div className="w-full max-w-sm m-auto bg-emerald-100 rounded p-5">
+        <p className="text-emerald-400 text-2xl font-bold flex justify-center">
           {isLogin ? "Connexion" : "Inscription"}
         </p>
         <form onSubmit={handleSubmit}>
           {isLogin ? (
             <>
               <div>
-                <label className="block mb-2 text-indigo-500">Email</label>
+                <label className="block mb-2 text-emerald-500">Email</label>
                 <input
-                  className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
+                  className="w-full p-2 mb-6 text-emerald-700 border-b-2 border-emerald-500 outline-none focus:bg-gray-300"
                   type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -48,9 +48,9 @@ const AuthForm = ({ setToken }) => {
                 />
               </div>
               <div>
-                <label className="block mb-2 text-indigo-500">Password</label>
+                <label className="block mb-2 text-emerald-500">Password</label>
                 <input
-                  className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
+                  className="w-full p-2 mb-6 text-emerald-700 border-b-2 border-emerald-500 outline-none focus:bg-gray-300"
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -62,9 +62,9 @@ const AuthForm = ({ setToken }) => {
           ) : (
             <>
               <div>
-                <label className="block mb-2 text-indigo-500">Full Name</label>
+                <label className="block mb-2 text-emerald-500">Full Name</label>
                 <input
-                  className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
+                  className="w-full p-2 mb-6 text-emerald-700 border-b-2 border-emerald-500 outline-none focus:bg-gray-300"
                   type="text"
                   value={fullname}
                   onChange={(e) => setFullName(e.target.value)}
@@ -73,9 +73,9 @@ const AuthForm = ({ setToken }) => {
                 />
               </div>
               <div>
-                <label className="block mb-2 text-indigo-500">Email</label>
+                <label className="block mb-2 text-emerald-500">Email</label>
                 <input
-                  className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
+                  className="w-full p-2 mb-6 text-emerald-700 border-b-2 border-emerald-500 outline-none focus:bg-gray-300"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -84,9 +84,9 @@ const AuthForm = ({ setToken }) => {
                 />
               </div>
               <div>
-                <label className="block mb-2 text-indigo-500">Password</label>
+                <label className="block mb-2 text-emerald-500">Password</label>
                 <input
-                  className="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-300"
+                  className="w-full p-2 mb-6 text-emerald-700 border-b-2 border-emerald-500 outline-none focus:bg-gray-300"
                   type="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -97,14 +97,14 @@ const AuthForm = ({ setToken }) => {
             </>
           )}
           <button
-            className="w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded"
+            className="w-full bg-emerald-700 hover:bg-emerald-700 text-white font-bold py-2 px-4 mb-6 rounded"
             type="submit"
           >
             {isLogin ? "Se connecter" : "S'inscrire"}
           </button>
         </form>
         <button
-          className="text-indigo-700 hover:text-pink-700 text-sm flex text-center"
+          className="text-emerald-700 hover:text-emerald-700 text-sm flex text-center"
           onClick={() => setIsLogin(!isLogin)}
         >
           {isLogin

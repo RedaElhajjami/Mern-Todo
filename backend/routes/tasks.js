@@ -39,4 +39,18 @@ router.delete('/:id', auth, async (req, res) => {
         res.status(500).json({ message: 'Error serveur lors de la suppression' });
     }
 });
+router.put("/:id/toggle-complete", async (req, res) => {
+    try {
+      const task = await Task.findById(req.params.id);
+      if (!task) {
+        return res.status(404).json({ message: "Task not found" });
+      }
+  
+      task.completed = !task.completed;
+      await task.save();
+      res.json(task);
+    } catch (error) {
+      res.status(500).json({ message: "Server error" });
+    }
+  });
 module.exports = router;

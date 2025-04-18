@@ -42,9 +42,9 @@ const Profile = ({ token }) => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center justify-center min-h-screen bg-green-100">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 mb-4"></div>
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-green-500 mb-4"></div>
           <p>Loading profile...</p>
         </div>
       </div>
@@ -52,8 +52,8 @@ const Profile = ({ token }) => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-md p-6 bg-white shadow-md rounded w-full space-y-4">
+    <div className="flex items-center justify-center min-h-screen bg-green-100">
+      <div className="max-w-md p-6 bg-white shadow-md w-full space-y-4 rounded-lg">
         <h2 className="text-2xl font-bold mb-4 text-center">Update Profile</h2>
         <form onSubmit={handleUpdate}>
           <div className="mb-4">
@@ -76,7 +76,7 @@ const Profile = ({ token }) => {
           </div>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full"
+            className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 w-full"
           >
             Update
           </button>

@@ -27,11 +27,11 @@ const TaskForm = ({ setTasks }) => {
         onChange={(e) => setNewTask(e.target.value)}
         placeholder="Nouvelle tâche"
         required
-        className="w-full sm:w-auto flex-grow px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+        className="w-full sm:w-auto flex-grow px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
       />
       <button
         type="submit"
-        className="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg shadow-md hover:bg-blue-600 transition duration-300"
+        className="px-6 py-2 bg-green-500 text-white font-bold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
       >
         Ajouter
       </button>

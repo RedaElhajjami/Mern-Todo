@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Required styles for react-beautiful-dnd */
+.dnd-placeholder {
+    display: none;
+  }

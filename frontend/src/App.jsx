@@ -11,7 +11,6 @@ import AuthForm from "./components/AuthForm";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 import Navbar from "./components/NavBar";
-import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 import Home from "./components/Home";
 
@@ -65,11 +64,11 @@ const App = () => {
                 token ? (
                   loading ? (
                     <div className="flex justify-center items-center h-screen">
-                      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+                      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-green-500"></div>
                     </div>
                   ) : (
                     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center py-8 px-4">
-                      <h1 className="text-3xl font-bold text-blue-500 mb-6">
+                      <h1 className="text-3xl font-bold text-green-500 mb-6">
                         TO-DO List
                       </h1>
                       <TaskForm setTasks={setTasks} />
@@ -90,7 +89,6 @@ const App = () => {
           </Routes>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
